@@ -39,16 +39,22 @@ function renderTasks(){
     })
     taskCount()
 }
-
 function taskCount(){
-    let count= tasks.length;
-    const countEL = document.getElementById("taskCount")
-    countEL.textContent = `ընդհանուր ${count}`
-}
+let count = tasks.length;
+let completedount =tasks.filter(task => task.completed === true).length
+console.log(completedount)
+    const countEl = document.getElementById("taskCount")
+    countEl.textContent = `ընդհանուր  ${count} ավարտված ${completedount}`
+ }
 
-    document.getElementById('taskbutton').addEventListener('click', ()=>{
+
+    document.getElementById('taskbutton').addEventListener('click', ()=>{ 
         const input = document.getElementById('taskinput')
         addTask(input.value)
         input.value =""
+    })
+    document.getElementById("deletTaskBtn").addEventListener('click', () =>{
+        tasks.length = 0
+        renderTasks()
     })
 

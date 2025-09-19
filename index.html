@@ -10,11 +10,17 @@
      <link rel="stylesheet" href="./css/style.css">
  </head>
  <body>
+   <div class="app-cotainer">
     <h1>Todo list </h1>
 
-    <input id="taskinput" type="text" placeholder="Type a new task">
-    <button id="taskbutton">Add Task</button>
+    <div class="input-container">
+      <input id="taskinput" type="text" placeholder="Type a new task">
+      <button id="taskbutton">Add Task</button>
+      <button id="deletTaskBtn">clear all</button>
+    </div>
+    <p id="taskCount"></p>
     <ul id="tasklist"></ul>
+ </div>
 
     <script src="main.js"></script>
  </body>
