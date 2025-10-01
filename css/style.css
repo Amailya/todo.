@@ -1,61 +1,81 @@
-body{
- background-color: azure;
- font-family: Arial, sans-serif;
- display: flex;
-justify-content: center;
-padding: 40px 0;
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
-h1{
-    color:#333;
-}
-.app-cotainer {
-      background-color: white;
-      padding: 30px 25px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      width: 360px;
 
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-    }
+h1 {
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-cotainer {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  width: 380px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
 
 .input-container {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-     .input-container input {
-      flex: 1;
-      padding: 8px 12px;
-      border-radius: 25px;
-      border: 1px solid #ccc;
-      outline: none;
-    }
-    .input-container button {
-      padding: 8px 12px;
-      border-radius: 25px;
-      border: 1px solid #787878;
-      cursor: pointer;
-      font-weight: bold;
-      background-color: honeydew;
-      color: #333;
-      
-    }
-ul{
-    list-style-type: none;
-    padding:0;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-li{
-    background-color: bisque;
-    margin:5px 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
+
+.input-container input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
 }
-.completed{
-    text-decoration: line-through;
-    color:#333;
+
+.input-container input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79,172,254,0.4);
+}
+
+.input-container button {
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: white;
+  margin: 6px 0;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
 }
